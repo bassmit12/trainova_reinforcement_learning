@@ -80,7 +80,8 @@ def create_workout_dataframe_from_feedback(feedback_history):
                 'weight': feedback['actual_weight'],
                 'reps': feedback.get('reps', 8),  # Default to 8 if not specified
                 'date': datetime.now().strftime('%Y-%m-%d'),  # Use current date if not available
-                'success': feedback.get('success', True)
+                'success': feedback.get('success', True),
+                'rir': feedback.get('rir', None)  # Include RIR data if available
             }
             workout_data.append(workout_entry)
     

@@ -37,6 +37,7 @@ class WorkoutData(BaseModel):
     reps: int
     date: Optional[str] = None
     success: Optional[bool] = True
+    rir: Optional[int] = None  # Reps In Reserve - how many more reps could have been done
     
 class PredictionRequest(BaseModel):
     exercise: str
@@ -54,6 +55,7 @@ class FeedbackRequest(BaseModel):
     actual_weight: float
     success: bool = True
     reps: Optional[int] = None
+    rir: Optional[int] = None  # Adding RIR to feedback
     
 class FeedbackResponse(BaseModel):
     feedback_recorded: bool
@@ -106,7 +108,8 @@ async def provide_feedback(
         predicted_weight=request.predicted_weight,
         actual_weight=request.actual_weight,
         success=request.success,
-        reps=request.reps
+        reps=request.reps,
+        rir=request.rir
     )
     
     return feedback_result
