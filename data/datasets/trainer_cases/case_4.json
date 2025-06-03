@@ -1,0 +1,166 @@
+{
+  "case_id": 4,
+  "user_profile": {
+    "user_id": 10,
+    "age": 52,
+    "gender": "female",
+    "weight_kg": 105.0,
+    "height_cm": 166.7,
+    "bmi": 37.7,
+    "experience_years": 17.5,
+    "starting_bench_1rm_kg": 65.0
+  },
+  "workout_history": [
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-03-05",
+      "weight": 65.0,
+      "reps": 1,
+      "rir": 0,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-03-10",
+      "weight": 62.5,
+      "reps": 3,
+      "rir": 1,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-03-13",
+      "weight": 55.0,
+      "reps": 8,
+      "rir": 2,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-03-20",
+      "weight": 52.5,
+      "reps": 8,
+      "rir": 3,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-03-25",
+      "weight": 60.0,
+      "reps": 5,
+      "rir": 0,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-03-27",
+      "weight": 62.5,
+      "reps": 3,
+      "rir": 0,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-04-01",
+      "weight": 50.0,
+      "reps": 12,
+      "rir": 3,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-04-06",
+      "weight": 67.5,
+      "reps": 1,
+      "rir": 1,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-04-08",
+      "weight": 57.5,
+      "reps": 8,
+      "rir": 0,
+      "success": false,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-04-11",
+      "weight": 60.0,
+      "reps": 8,
+      "rir": 3,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-04-15",
+      "weight": 67.5,
+      "reps": 3,
+      "rir": 2,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-04-20",
+      "weight": 57.5,
+      "reps": 8,
+      "rir": 2,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-04-25",
+      "weight": 50.0,
+      "reps": 12,
+      "rir": 1,
+      "success": true,
+      "notes": ""
+    },
+    {
+      "user_id": 10,
+      "exercise": "Bench Press",
+      "date": "2025-05-02",
+      "weight": 60.0,
+      "reps": 8,
+      "rir": 0,
+      "success": false,
+      "notes": ""
+    }
+  ],
+  "validation_workout": {
+    "user_id": 10,
+    "exercise": "Bench Press",
+    "date": "2025-05-05",
+    "weight": 57.5,
+    "reps": 8,
+    "rir": 3,
+    "success": true,
+    "notes": ""
+  },
+  "trainer_recommendation": null
+}

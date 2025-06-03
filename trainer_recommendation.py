@@ -362,21 +362,29 @@ def main():
     print("="*60)
     
     # Define paths
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     cases_dir = os.path.join(base_dir, "data", "datasets", "trainer_cases")
     output_dir = os.path.join(base_dir, "data", "datasets", "trainer_recommendations")
+    
+    # Ensure directories exist
+    os.makedirs(cases_dir, exist_ok=True)
+    os.makedirs(output_dir, exist_ok=True)
     
     # Display data paths
     print(f"\nData paths:")
     print(f"- Cases source: {cases_dir}")
     print(f"- Recommendations will be saved to: {output_dir}")
     
-    # Check if cases directory exists, if not generate mock data
-    if not os.path.exists(cases_dir) or not os.listdir(cases_dir):
+    # Check if cases directory is empty, if so generate mock data
+    if not os.listdir(cases_dir):
         print("No trainer cases found. Generating mock data...")
         
         # Import the mock data generator
-        from data.mock_data_generator import generate_mock_dataset, prepare_trainer_recommendation_cases
+        try:
+            from data.mock_data_generator import generate_mock_dataset, prepare_trainer_recommendation_cases
+        except ImportError:
+            print("Error: Could not import mock data generator. Make sure you're running from the correct directory.")
+            return
         
         # Generate mock dataset
         mock_dataset = generate_mock_dataset(num_users=30, workouts_per_user=15)
