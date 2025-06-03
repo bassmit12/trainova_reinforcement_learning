@@ -1,0 +1,40 @@
+{
+  "trainer_info": {
+    "name": "Bas",
+    "years_experience": "6",
+    "specialization": "Bodybuilding",
+    "date": "2025-06-03"
+  },
+  "recommendations": [
+    {
+      "case_id": 1,
+      "user_id": 6,
+      "trainer_id": "Bas",
+      "recommended_weight": 62.5,
+      "target_reps": 5,
+      "target_rir": 1,
+      "reasoning": "",
+      "date": "2025-06-03",
+      "actual_weight": 57.5,
+      "actual_reps": 5,
+      "actual_rir": 1
+    },
+    {
+      "case_id": 2,
+      "user_id": 20,
+      "trainer_id": "Bas",
+      "recommended_weight": 50.0,
+      "target_reps": 4,
+      "target_rir": 2,
+      "reasoning": "",
+      "date": "2025-06-03",
+      "actual_weight": 45.0,
+      "actual_reps": 5,
+      "actual_rir": 0
+    }
+  ],
+  "timestamp": "20250603_113851",
+  "status": "partial",
+  "completed": 2,
+  "total_cases": 15
+}
